@@ -51,7 +51,7 @@ Para utilizar este proyecto, siga los siguientes pasos:
 - Ejecute el los archivos eda.py y nlp.py en la terminal utilizando el siguiente comando:
 
 
-```python eda.py
-python nlp.py```
+```python eda.py```
+```python nlp.py```
 
 
