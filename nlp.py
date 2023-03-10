@@ -81,6 +81,34 @@ for best_negative in sorted(
     key=lambda x: x[1])[:5]:
     print(best_negative)
     
+# Plot en valores absolutos
+# Obtener las 10 palabras más importantes en valores absolutos
+top_features = sorted(feature_to_coef.items(), key=lambda x: abs(x[1]), reverse=True)[:10]
+top_features.reverse()
+
+# Crear la figura
+fig, ax = plt.subplots()
+
+# Crear la gráfica de barras horizontales
+ax.barh([i for i in range(len(top_features))], [abs(x[1]) for x in top_features], color="#ff3333")
+
+# Añadir etiquetas al eje y
+ax.set_yticks([i for i in range(len(top_features))])
+ax.set_yticklabels([x[0] for x in top_features])
+
+# Añadir etiquetas al eje x
+ax.set_xlabel("Coeficiente absoluto")
+
+# Añadir título
+ax.set_title("Top 10 palabras más importantes del modelo", pad=20)
+
+# Ajustar los márgenes de la figura
+plt.subplots_adjust(left=0.25)
+
+# Mostrar la figura
+plt.savefig('/img/feature_imp.png')
+
+plt.show()
 
 # Palabras más frecuentes en los tweets positivos y negativos
 functions.plot_ngrams(df, 'pred_bin', 'text_trans', 1)
