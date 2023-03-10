@@ -40,13 +40,17 @@ Para utilizar este proyecto, siga los siguientes pasos:
 
 - Clone este repositorio en su máquina local.
 
+ ```git clone url_repositorio```
+
 - Instale las librerías necesarias contenidas en el archivo requirements.txt utilizando el siguiente comando en la terminal:
 
 ```pip install -r requirements.txt```
 
 - Cree una base de datos en AWS RDS y asegúrese de tener las credenciales de acceso.
 
-- Añada las credenciales de acceso a la base de datos en el archivo database.py.
+- Añada las credenciales de acceso a la base de datos en el archivo database.py y ejecútelo.
+
+```python database.py```
 
 - Ejecute el los archivos eda.py y nlp.py en la terminal utilizando el siguiente comando:
 
