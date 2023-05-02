@@ -1,8 +1,8 @@
-# Monitorización de redes sociales: The Bridge
+# Social media monitoring: The Bridge
 
-En este proyecto se realiza una obtención de datos de Twitter de las menciones que nombran a la escuela The Bridge con el objetivo de medir el impacto de su marca en redes sociales y tomar decisiones basadas en los datos.
-La base de datos generada se encuentra desplegada en Cloud mediante el servicio RDS de Amazon Web Services (AWS).
-Se ha realizado un primer análisis exploratorio de los datos y posteriormente, se ha utilizado un modelo pre-entrenado de Natural Lenguage Processing (NLP) para realizar un análisis del sentimiento de los tweets que mencionan a The Bridge.
+This project involves obtaining Twitter data from mentions that reference The Bridge school in order to measure the impact of its brand on social media and make data-driven decisions.
+The generated database is deployed on the cloud using Amazon Web Services' (AWS) RDS service.
+An initial exploratory data analysis has been conducted, followed by the use of a pre-trained Natural Language Processing (NLP) model to perform a sentiment analysis of the tweets mentioning The Bridge.
 
 ### Directory tree
 ```
@@ -35,24 +35,25 @@ twitter_analysis
     │   ...
  ```
 
-### Modo de uso
-Para utilizar este proyecto, siga los siguientes pasos:
+### Instructions for use
 
-- Clone este repositorio en su máquina local.
+To use this project, follow these steps:
 
- ```git clone url_repositorio```
+- Clone this repository on your local machine.
 
-- Instale las librerías necesarias contenidas en el archivo requirements.txt utilizando el siguiente comando en la terminal:
+ ```git clone url_repository```
+
+- Install the necessary libraries contained in the requirements.txt file using the following command in the terminal:
 
 ```pip install -r requirements.txt```
 
-- Cree una base de datos en AWS RDS y asegúrese de tener las credenciales de acceso.
+- Create a database in AWS RDS and ensure you have the access credentials.
 
-- Añada las credenciales de acceso a la base de datos en el archivo database.py y ejecútelo.
+- Add the access credentials for the database in the database.py file and execute it.
 
 ```python database.py```
 
-- Ejecute el los archivos eda.py y nlp.py en la terminal utilizando el siguiente comando:
+- Run the eda.py and nlp.py files in the terminal using the following commands:
 
 
 ```python eda.py```
